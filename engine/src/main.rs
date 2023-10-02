@@ -1,6 +1,7 @@
-use common::add;
+use common::player::*;
+use common::Random;
 
 fn main() {
-    let s = add(1, 2);
-    println!("{}", s)
+    let p = Player::random();
+    println!("{:?}", p)
 }
