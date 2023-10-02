@@ -1,7 +1,7 @@
 use crate::position::Position;
 use crate::side::Side;
 
-#[derive(PartialEq)]
+#[derive(PartialEq, Clone, Debug)]
 pub enum Instruction {
     Role(Position),
     Kickoff,

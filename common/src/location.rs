@@ -1,3 +1,4 @@
+#[derive(PartialEq, Clone, Debug)]
 pub struct Location {
     pub x: i32,
     pub y: i32,

@@ -6,7 +6,7 @@ use crate::Random;
 
 const RANGE: RangeInclusive<f32> = 55.0..=95.0;
 
-#[derive(Debug, Clone)]
+#[derive(PartialEq, Debug, Clone)]
 pub struct Weight {
     value: f32,
     unit: Unit,

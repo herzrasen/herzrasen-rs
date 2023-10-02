@@ -4,11 +4,11 @@ use crate::height::Height;
 use crate::lastname::Lastname;
 use crate::mental_attrs::MentalAttrs;
 use crate::physical_attrs::PhysicalAttrs;
-use crate::Random;
 use crate::technical_attrs::TechnicalAttrs;
 use crate::weight::Weight;
+use crate::Random;
 
-#[derive(Debug)]
+#[derive(Clone, PartialEq, Debug)]
 pub struct Player {
     lastname: Lastname,
     firstname: Firstname,

@@ -2,7 +2,7 @@ use rand::seq::SliceRandom;
 
 use crate::Random;
 
-#[derive(Debug)]
+#[derive(Clone, PartialEq, Debug)]
 pub struct Lastname {
     value: String,
 }
@@ -25,7 +25,6 @@ impl Random for Lastname {
         let cap_name = name[0..1].to_uppercase() + &name[1..];
         Lastname { value: cap_name }
     }
-
 }
 
 impl From<String> for Lastname {

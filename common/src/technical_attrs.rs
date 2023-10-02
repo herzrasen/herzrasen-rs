@@ -3,7 +3,7 @@ use struct_iterable::Iterable;
 
 use crate::{ATTR_RANGE, Random};
 
-#[derive(Debug)]
+#[derive(Clone, PartialEq, Debug)]
 struct TechnicalAttr {
     value: f32,
 }
@@ -22,7 +22,7 @@ impl Random for TechnicalAttr {
     }
 }
 
-#[derive(Debug, Iterable)]
+#[derive(Clone, PartialEq, Debug, Iterable)]
 pub struct TechnicalAttrs {
     catching: TechnicalAttr,
     dribbling: TechnicalAttr,

@@ -1,18 +1,22 @@
 use std::ops::Range;
 
-mod active_player;
-mod ball;
+pub mod active_player;
+pub mod active_team;
+pub mod ball;
 mod date;
 mod firstname;
 mod height;
-mod instruction;
+pub mod instruction;
 mod lastname;
 mod location;
 mod mental_attrs;
 mod physical_attrs;
 pub mod player;
-mod position;
+pub mod position;
+pub mod probability;
 mod side;
+mod team;
+pub mod team_type;
 mod technical_attrs;
 mod weight;
 

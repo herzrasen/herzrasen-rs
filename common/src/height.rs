@@ -6,13 +6,13 @@ use crate::Random;
 
 const RANGE: RangeInclusive<u32> = 160..=195;
 
-#[derive(Debug)]
+#[derive(Clone, PartialEq, Debug)]
 pub struct Height {
     value: u32,
     unit: Unit,
 }
 
-#[derive(Debug)]
+#[derive(Clone, PartialEq, Debug)]
 enum Unit {
     CENTIMETERS,
 }

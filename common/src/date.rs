@@ -3,7 +3,7 @@ use rand::Rng;
 
 use crate::Random;
 
-#[derive(Debug)]
+#[derive(Clone, PartialEq, Debug)]
 pub struct DateOfBirth {
     year: i32,
     month: u32,
